@@ -1,10 +1,6 @@
 import Bg from "@/components/BG";
 import Image from "next/image";
-import Letter from "../../../public/Letter.svg";
-import Map from "../../../public/Map Pin.svg";
-import Phone from "../../../public/PhoneBlu.svg";
 import Valery from "../../../public/valery.jpg";
-import Whatsapp from "../../../public/WhatsApp.svg";
 import Velta from "../../../public/Velta_K.png";
 import Konditer from "../../../public/Konditersnab.png";
 import Jiv from "../../../public/JiV_Grupp.png";
@@ -23,16 +19,16 @@ export default function ContactPage() {
             <p className="text-[24px] text-[#00426f]">Центральный Офис</p>
             <div className="flex flex-col gap-2">
               <div className="flex flex-row gap-2">
-                <Image src={Map} alt="Map" className="w-[24px] h-[24px]" />
+                <Image src={'Map Pin.svg'} width={24} height={24} alt="Map" className="w-[24px] h-[24px]" />
                 <p>г. Екатеринбург, ул Бориса Ельцина, д. 1а, оф. 9.7</p>
               </div>
               <div className="flex flex-row gap-2">
-                <Image src={Phone} alt="phone" className="w-[24px] h-[24px] " />
+                <Image src={'PhoneBlu.svg'} width={24} height={24} alt="phone" className="w-[24px] h-[24px] " />
                 <p>8-800-500-57-70</p>
               </div>
               <div className="flex flex-row gap-2">
                 <Image
-                  src={Letter}
+                  src={'Letter.svg'} width={24} height={24}
                   alt="letter"
                   className="w-[24px] h-[24px]"
                 />
@@ -43,12 +39,14 @@ export default function ContactPage() {
           <div className="flex flex-col gap-3">
             <p className="text-[24px] text-[#00426f]">Команда отдела продаж</p>
             <div className="flex flex-row items-center gap-2">
-              <Image src={Valery} alt="dodik" className="w-[90px] h-[120px]" />
+              <Image src={Valery} width={90} height={120} alt="dodik" className="w-[90px] h-[120px]" />
               <div className="flex flex-col gap-1">
                 <p>Алексей</p>
                 <p>+7-912-280-00-42</p>
                 <Image
-                  src={Whatsapp}
+                  src={'WhatsApp.svg'}
+                  width={30}
+                  height={30}
                   alt="whatsapp"
                   className="h-[30px] w-[30px]"
                 />
