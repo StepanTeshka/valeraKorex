@@ -2,4 +2,4 @@
 /backend/.env*.local
 
 node_modules
-.next
+.nextnode_modules/
