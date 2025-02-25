@@ -15,8 +15,8 @@ func main() {
 		log.Fatalf("failed to run appSite: %s", err.Error())
 	}
 
-	log.Println("Запуск сервера на :5051...")
-	err = http.ListenAndServe(":5051", nil)
+	log.Println("Запуск сервера на :5055...")
+	err = http.ListenAndServe(":5055", nil)
 	if err != nil {
 		log.Fatal("Ошибка запуска сервера:", err)
 	}

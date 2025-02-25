@@ -18,7 +18,7 @@ export default function CatalogPage() {
   const [products, setProducts] = useState<Product[]>([]);
 
   useEffect(() => {
-    fetch("http://65.109.5.159:5051/products")
+    fetch("http://65.109.5.159:5055/products")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Ошибка при получении товаров");
